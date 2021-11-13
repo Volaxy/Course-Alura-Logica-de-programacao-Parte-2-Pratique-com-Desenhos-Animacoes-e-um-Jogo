@@ -26,3 +26,9 @@ URL do Curso -> [Lógica de programação II: pratique com desenhos, animações
 * A função **`lineTo()`** indica que ele deve iniciar uma linha até a posição específicada pelo *eixo X* e *eixo Y*.
 * A função **`fill()`** preenche a forma que foi desenhada.
 * A função **`arc()`** traça uma esfera, informando o *posicionamento* da esfera, no eixo *X* e *Y*, o *raio* da esfera, e o *ângulo inicial* e o *ângulo final*, em *radianos* (multiplicado por 3,14).
+
+## 02 - Extraindo Funções
+* A propriedade **`strokeStyle`** recebe uma cor, que será a cor da borda.
+* A função **`strokeRect()`** desenha uma borda em volta dos parâmetros específicados, como na função **`fillRect()`**.
+* A *propriedade* **`pincel.font`** define uma *fonte de texto* para o pincel.
+* A função **`fillText`** escreve um texto no painel, passando como parâmetro o texto que irá aparecer, e as coordenadas *X* e *Y*.
