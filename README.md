@@ -32,3 +32,33 @@ URL do Curso -> [Lógica de programação II: pratique com desenhos, animações
 * A função **`strokeRect()`** desenha uma borda em volta dos parâmetros específicados, como na função **`fillRect()`**.
 * A *propriedade* **`pincel.font`** define uma *fonte de texto* para o pincel.
 * A função **`fillText`** escreve um texto no painel, passando como parâmetro o texto que irá aparecer, e as coordenadas *X* e *Y*.
+* A propriedade **`onclick`**, assim como outras, é ativada pelo próprio navegador executando a *função* que foi atrelada à ela, ao inserir um parâmetro na *função* em que irá executar, o navegador cria um objeto contendo várias informações sobre o **evento** em que aconteceu a *função*.
+
+## 03 - Interagindo com o Usuário
+* A propriedade **`oncontextmenu`** recebe uma *função* que será ativada toda vez que o usuário clicar com o botão direito do mouse no objeto em que ela foi atribuida.
+* Uma **função anônima** é uma função que não possui um nome.
+* Uma **função anônima** pode ser atrelada a uma propriedade que requer uma função para ser executada, exemplo:
+```
+tela.onmousemove = function(evento) {
+    if(desenha) {
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2 * 3.14);
+        pincel.fill();
+    }
+
+    console.log(x + ',' + y);
+}
+
+tela.onmousedown = function() {
+    desenha = true;
+}
+
+tela.onmouseup = function() {
+    desenha = false;
+}
+```
+* Um **`<input type="color">`** exibe uma paleta de cores no navegador. Quando o usuário confirmar a cor, ela é armazenada na variável `input`, com o valor da cor escolhida.
