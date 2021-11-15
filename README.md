@@ -67,3 +67,6 @@ tela.onmouseup = function() {
 * A função **`clearRect()`** limpa a tela informando a posição *X* e *Y* de inicio e as dimensões de *largura* e *altura*.
 * A função **`setInterval()`** chama uma função a cada intervalo de tempo, recebendo como *parâmetros* a função que irá chamar e o tempo em *milisegundos* entre os intervalos da chamada.
 * Uma variável pode ter um **escopo de *função***, ou seja, só dentro da função ou ter um **escopo chamado de *escopo global***, em que ela é declarada fora de um *função*.
+
+## 05 - Nosso Primeiro Jogo
+* A função **`Math.floor()`** arredonda o número passado como parâmetro, para baixo.
